@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:tflite_models/color_identifier.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
   runApp(const MyApp());
 }
 
