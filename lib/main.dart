@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tflite_models/color_identifier.dart';
+//import 'package:tflite_models/color_identifier.dart';
+import 'package:tflite_models/face_recognition.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -39,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: const ColorIdentifier(),
+      body: FaceRecognitionScreen(),
     );
   }
 }

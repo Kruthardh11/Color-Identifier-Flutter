@@ -21,7 +21,7 @@ class _ColorIdentifierState extends State<ColorIdentifier> {
       if (pickedImage != null) {
         setState(() {
           _image = File(pickedImage.path);
-          _hasRunModel = false; // Reset the result when a new image is selected
+          _hasRunModel = false;
         });
       }
       detectColor(_image!);
