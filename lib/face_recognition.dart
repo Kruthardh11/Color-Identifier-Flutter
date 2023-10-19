@@ -16,8 +16,8 @@ class _FaceRecognitionScreenState extends State<FaceRecognitionScreen> {
 
     if (image == null) return;
 
-    var request =
-        http.MultipartRequest('POST', Uri.parse('YOUR_FLASK_API_URL'));
+    var request = http.MultipartRequest(
+        'POST', Uri.parse('http://127.0.0.1:5000/recognize'));
     request.files.add(await http.MultipartFile.fromPath('image', image.path));
 
     var response = await request.send();
