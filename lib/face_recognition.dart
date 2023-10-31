@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-// import 'package:image_picker/image_picker.dart';
 
 class FaceRecognitionScreen extends StatefulWidget {
   @override
@@ -85,7 +84,6 @@ class _FaceRecognitionScreenState extends State<FaceRecognitionScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  // Registration Form
                   TextField(
                     controller: registrationNameController,
                     decoration: InputDecoration(labelText: 'Name'),
